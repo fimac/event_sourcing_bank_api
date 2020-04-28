@@ -1,0 +1,1267 @@
+HTTP/1.1 404 Not Found
+cache-control: max-age=0, private, must-revalidate
+content-length: 50618
+content-type: text/html; charset=utf-8
+date: Tue, 28 Apr 2020 00:20:47 GMT
+server: Cowboy
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Phoenix.Router.NoRouteError at PUT /api/data/1</title>
+    <meta name="viewport" content="width=device-width">
+    <style>/*! normalize.css v4.2.0 | MIT License | github.com/necolas/normalize.css */html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}template,[hidden]{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:0.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-0.25em}sup{top:-0.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace, monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:bold}button,input{overflow:visible}button,select{text-transform:none}button,html [type="button"],[type="reset"],[type="submit"]{-webkit-appearance:button}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type="checkbox"],[type="radio"]{box-sizing:border-box;padding:0}[type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button{height:auto}[type="search"]{-webkit-appearance:textfield;outline-offset:-2px}[type="search"]::-webkit-search-cancel-button,[type="search"]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:0.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}</style>
+    <style>
+    html, body, td, input {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    html {
+        font-size: 15px;
+        line-height: 1.6;
+        background: #fff;
+        color: #203040;
+    }
+
+    @media (max-width: 768px) {
+        html {
+             font-size: 14px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        html {
+             font-size: 13px;
+        }
+    }
+
+    button:focus,
+    summary:focus {
+        outline: 0;
+    }
+
+    summary {
+        cursor: pointer;
+    }
+
+    pre {
+        font-family: menlo, consolas, monospace;
+        overflow: auto;
+        max-width: 100%;
+    }
+
+    .top-details {
+        padding: 48px;
+        background: #f9f9fa;
+    }
+
+    .top-details,
+    .conn-info {
+        padding: 48px;
+    }
+
+
+    @media (max-width: 768px) {
+        .top-details,
+        .conn-info {
+            padding: 32px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .top-details,
+        .conn-info {
+            padding: 16px;
+        }
+    }
+
+    /*
+     * Exception logo
+     */
+
+    
+    .exception-logo {
+        position: absolute;
+        right: 48px;
+        top: 48px;
+        pointer-events: none;
+        width: 100%;
+    }
+
+    .exception-logo:before {
+        content: '';
+        display: block;
+        height: 64px;
+        width: 100%;
+        background-size: auto 100%;
+        background-image: url("data:image/png;base64,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");
+        background-position: right 0;
+        background-repeat: no-repeat;
+        margin-bottom: 16px;
+    }
+
+    @media (max-width: 768px) {
+        .exception-logo {
+            position: static;
+        }
+
+        .exception-logo:before {
+            height: 32px;
+            background-position: left 0;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .exception-logo {
+            display: none;
+        }
+    }
+    
+
+    /*
+     * Exception info
+     */
+
+    /* Compensate for logo placement */
+    @media (min-width: 769px) {
+        .exception-info {
+            max-width: 90%;
+        }
+    }
+
+    .exception-info > .struct,
+    .exception-info > .title,
+    .exception-info > .detail {
+        margin: 0;
+        padding: 0;
+    }
+
+    .exception-info > .struct {
+        font-size: 1em;
+        font-weight: 700;
+        color: #EB532D;
+    }
+
+    .exception-info > .struct > small {
+        font-size: 1em;
+        color: #607080;
+        font-weight: 400;
+    }
+
+    .exception-info > .title {
+        font-size: 2.0736em;
+        line-height: 1.4;
+        font-weight: 300;
+        color: #EB532D;
+    }
+
+    @media (max-width: 768px) {
+        .exception-info > .title {
+            font-size: 1.7490062499999994em;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .exception-info > .title {
+            font-size: 1.4641000000000004em;
+        }
+    }
+
+    .exception-info > .detail {
+        margin-top: 1.3em;
+        white-space: pre;
+    }
+
+    /*
+     * Code explorer
+     */
+
+    .code-explorer {
+      margin: 32px 0 0 0;
+    }
+
+    @media (max-width: 768px) {
+        .code-explorer {
+            margin-top: 16px;
+        }
+    }
+
+    .code-explorer:after {
+        content: '';
+        display: table;
+        clear: both;
+        zoom: 1;
+    }
+
+    .code-explorer > .code-snippets {
+        float: left;
+        width: 45%;
+    }
+
+    .code-explorer > .stack-trace {
+        float: right;
+        width: 55%;
+        padding-left: 32px;
+    }
+
+    /* Collapse to single-column */
+    @media (max-width: 960px) {
+        .code-explorer > .code-snippets {
+            float: none;
+            width: auto;
+            margin-bottom: 16px;
+        }
+
+        .code-explorer > .stack-trace {
+            float: none;
+            width: auto;
+            padding-left: 0;
+        }
+    }
+
+    /*
+     * Frame info:
+     * Holds the code (code-block) and more
+     */
+
+    .frame-info {
+        background: white;
+        box-shadow:
+            0 1px 3px rgba(80, 100, 140, .1),
+            0 8px 15px rgba(80, 100, 140, .05);
+    }
+
+    .frame-info > .meta,
+    .frame-info > .file {
+        padding: 12px 16px;
+        white-space: no-wrap;
+        font-size: 0.8333333333333334em;
+    }
+
+    @media (max-width: 480px) {
+        .frame-info > .meta,
+        .frame-info > .file {
+            padding: 6px 16px;
+            font-size: 0.9090909090909091em;
+        }
+    }
+
+    .frame-info > .file > a {
+        text-decoration: none;
+        color: #203040;
+        font-weight: 700;
+    }
+
+    .frame-info > .code {
+        border-top: solid 1px #eee;
+        border-bottom: solid 1px #eee;
+        font-size: 0.8em;
+    }
+
+    /* Hiding */
+    .frame-info {
+        display: none;
+    }
+
+    .frame-info.-active {
+        display: block;
+    }
+
+    .frame-info > details.meta {
+        border-top: solid 1px #eee;
+        padding: 0;
+    }
+
+    .frame-info > details.meta > summary {
+        padding: 12px 16px;
+    }
+
+    .frame-info > details.meta > pre {
+        line-height: 16px;
+        padding: 6px 0 24px 30px;
+    }
+
+    .frame-info > details.meta > ol {
+        counter-reset: item;
+        padding: 6px 0 24px 46px;
+        list-style: none;
+    }
+
+    .frame-info > details.meta > ol > li {
+        counter-increment: item;
+    }
+
+    .frame-info > details.meta > ol > li:before {
+        content: counter(item) ". ";
+        color: #607080;
+    }
+
+    /*
+     * Frame details
+     */
+
+    .frame-mfa {
+        color: #607080;
+    }
+
+    .frame-mfa > .app {
+        color: #607080;
+    }
+
+    .frame-mfa > .docs {
+        color: #EB532D;
+        text-decoration: none;
+    }
+
+    .frame-mfa .docs:hover {
+        text-decoration: underline;
+    }
+
+    .frame-mfa > .right {
+        float: right;
+        padding-left: 5px;
+    }
+
+    .frame-mfa > .right:after {
+        content: '·';
+        margin-left: .2em;
+        padding-left: .2em;
+    }
+
+    .frame-mfa > .right:first-child:after {
+        content: '';
+    }
+
+    /*
+     * Code block:
+     * The `pre` that holds the code
+     */
+
+    .code-block {
+        margin: 0;
+        padding: 12px 0;
+        font-size: 0.8333333333333334em;
+        line-height: 1.4;
+        white-space: normal;
+    }
+
+    .code-block > .line {
+        white-space: pre;
+        display: block;
+        padding: 0 16px;
+    }
+
+    /* Line highlight */
+    .code-block > .line.-highlight {
+        background-color: #f0f4fa;
+        -webkit-animation: line-highlight 750ms linear;
+        animation: line-highlight 750ms linear;
+    }
+
+    @-webkit-keyframes line-highlight {
+        0% { background-color: #f0f4fa; }
+        25% { background-color: #ffe5e5; }
+        50% { background-color: #f0f4fa; }
+        75% { background-color: #ffe5e5; }
+    }
+
+    @keyframes line-highlight {
+        0% { background-color: #f0f4fa; }
+        25% { background-color: #ffe5e5; }
+        50% { background-color: #f0f4fa; }
+        75% { background-color: #ffe5e5; }
+    }
+
+    .code-block > .line > .ln {
+        color: #607080;
+        margin-right: 1.5em;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    .code-block > .line > .code {
+        font-family: menlo, consolas, monospace;
+    }
+
+    /*
+     * Empty code
+     */
+
+    .code-block-empty {
+        text-align: center;
+        color: #607080;
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+
+    /*
+     * Stack trace heading
+     */
+
+    .stack-trace-heading {
+        padding-top: 8px;
+    }
+
+    .stack-trace-heading:after {
+        content: '';
+        display: block;
+        clear: both;
+        zoom: 1;
+        border-bottom: solid 1px #eee;
+        padding-top: 12px;
+        margin-bottom: 16px;
+    }
+
+    .stack-trace-heading > h3 {
+        display: none;
+    }
+
+    .stack-trace-heading > label {
+        display: block;
+        padding-left: 8px;
+        line-height: 1.9;
+        font-size: 0.8333333333333334em;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    .stack-trace-heading > label > input {
+        margin-right: .3em;
+    }
+
+    @media (max-width: 480px) {
+        .stack-trace-heading > label {
+            font-size: 0.9090909090909091em;
+        }
+    }
+
+    /*
+     * Stack trace
+     */
+
+    .stack-trace-list,
+    .stack-trace-list > li {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    .stack-trace-list > li > .stack-trace-item.-all {
+        display: none;
+    }
+
+    .stack-trace-list.-show-all > li > .stack-trace-item.-all {
+        display: block;
+    }
+
+    /*
+     * Stack trace item:
+     * The clickable line to inspect a stack trace
+     */
+
+    .stack-trace-item {
+        font-size: 0.8333333333333334em;
+        display: block;
+        width: 100%;
+        border: 0;
+        margin: 0;
+        padding: 4px 8px;
+        background: transparent;
+        cursor: pointer;
+        text-align: left;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    .stack-trace-item:hover,
+    .stack-trace-item:focus {
+        background-color: rgba(80, 100, 140, 0.05);
+    }
+
+    .stack-trace-item,
+    .stack-trace-item:active {
+        color: #203040;
+    }
+
+    .stack-trace-item:active {
+        background-color: rgba(80, 100, 140, 0.1);
+    }
+
+    .stack-trace-item.-active {
+        background-color: white;
+    }
+
+    /* Circle */
+    .stack-trace-item > .left:before {
+        content: '';
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        background: #a0b0c0;
+        border-radius: 50%;
+        margin-right: 8px;
+    }
+
+    .stack-trace-item.-app > .left:before {
+        background: #EB532D;
+        opacity: 1;
+    }
+
+    .stack-trace-item.-app > .left > .app {
+        display: none;
+    }
+
+    .stack-trace-item > .left {
+        float: left;
+        max-width: 55%;
+    }
+
+    .stack-trace-item > .info {
+        color: #607080;
+        float: right;
+        max-width: 45%;
+    }
+
+    .stack-trace-item > .left,
+    .stack-trace-item > .info {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .stack-trace-item > .left > .filename > .line {
+        color: #607080;
+    }
+
+    /* App name */
+    .stack-trace-item > .left > .app {
+        color: #607080;
+    }
+
+    .stack-trace-item > .left > .app:after {
+        content: '·';
+        margin: 0 .2em;
+    }
+
+    /*
+     * Code as a blockquote:
+     * Like `pre` but with wrapping
+     */
+
+    .code-quote {
+        font-family: menlo, consolas, monospace;
+        font-size: 0.8333333333333334em;
+        margin: 0;
+        overflow: auto;
+        max-width: 100%;
+        word-wrap: break-word;
+        white-space: normal;
+    }
+
+    .code.-padded {
+        padding: 0 16px 16px 16px;
+    }
+
+    .code i.red {
+        color: #CC0000;
+        font-style: normal;
+    }
+
+    .code i.green {
+        font-style: normal;
+    }
+
+    .banner {
+      padding: 24px 48px 24px 48px;
+      border-top: solid 1px #eee;
+    }
+
+    /*
+     * Conn info
+     */
+
+    .conn-info {
+        border-top: solid 1px #eee;
+    }
+
+    /*
+     * Conn details
+     */
+
+    .conn-details {
+    }
+
+    .conn-details + .conn-details {
+        margin-top: 16px;
+    }
+
+    .conn-details > summary {
+    }
+
+    .conn-details > dl {
+        display: block;
+        overflow: hidden;
+        margin: 0;
+        padding: 4px 0;
+        border-bottom: solid 1px #eee;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .conn-details > dl:first-of-type {
+        margin-top: 16px;
+        border-top: solid 1px #eee;
+    }
+
+    /* Term */
+    .conn-details > dl > dt {
+        width: 20%;
+        float: left;
+        font-size: 0.8333333333333334em;
+        color: #607080;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        position: relative;
+        top: -1px; /* Compensate for font metrics */
+    }
+
+    /* Definition */
+    .conn-details > dl > dd {
+        width: 80%;
+        float: left;
+    }
+
+    @media (max-width: 480px) {
+        .conn-details > dl > dt {
+            font-size: 0.9090909090909091em;
+        }
+    }
+
+    .action-form {
+        display: inline-block;
+        margin: 20px 10px 5px 0;
+    }
+
+    .action-button:hover {
+        background-color: #f9f9fa;
+        cursor: pointer;
+    }
+
+    .action-button {
+        background-color: white;
+        border: 1px solid #EB532D;
+        border-radius: 3px;
+        color: #EB532D;
+        padding: 0 20px;
+    }
+
+    .action-button:active {
+        background-color: inherit;
+        background-color: #f2f2f4;
+    }
+    </style>
+</head>
+<body>
+    <div class="top-details">
+        
+        <aside class="exception-logo"></aside>
+        
+
+        <header class="exception-info">
+            
+            <h5 class="struct">
+                Phoenix.Router.NoRouteError
+                <small>at PUT</small>
+                <small class="path">/api/data/1</small>
+            </h5>
+            <h1 class="title">no route found for PUT /api/data/1 (BankAPIWeb.Router)</h1>
+            
+        </header>
+
+        
+
+    
+        </div>
+        <div class="banner"><h3>Available routes</h3>
+<pre>account_path  POST  /api/accounts  BankAPIWeb.AccountController :create
+</pre>
+</div>
+        <div class="top-details">
+    
+
+        <div class="code-explorer">
+            <div class="code-snippets">
+                
+                  <div class="frame-info" data-index="0" role="stack-trace-details">
+                    <div class="file">
+                        <a href="">lib/phoenix/router.ex</a>
+                    </div>
+
+                    
+                    <div class="code code-block-empty">No code available.</div>
+                    
+
+                    <div class="meta">
+                        <div class="frame-mfa">
+                            BankAPIWeb.Router.call/2
+                            
+                                <a class="docs right" href="https://hexdocs.pm/bank_api/0.1.0/BankAPIWeb.Router.html#call/2">docs</a>
+                            
+                            
+                                <span class="app right">bank_api</span>
+                            
+                        </div>
+                    </div>
+
+                    
+
+                    
+                </div>
+                
+                  <div class="frame-info" data-index="1" role="stack-trace-details">
+                    <div class="file">
+                        <a href="">lib/bank_api_web/endpoint.ex</a>
+                    </div>
+
+                    
+<pre class="code code-block"><span class="line -highlight"><span class="ln">1</span><span class="code">defmodule BankAPIWeb.Endpoint do</span></span>
+<span class="line "><span class="ln">2</span><span class="code">  use Phoenix.Endpoint, otp_app: :bank_api</span></span>
+<span class="line "><span class="ln">3</span><span class="code"></span></span>
+<span class="line "><span class="ln">4</span><span class="code">  # The session will be stored in the cookie and signed,</span></span>
+<span class="line "><span class="ln">5</span><span class="code">  # this means its contents can be read but not tampered with.</span></span>
+<span class="line "><span class="ln">6</span><span class="code">  # Set :encryption_salt if you would also like to encrypt it.</span></span>
+</pre>
+                    
+
+                    <div class="meta">
+                        <div class="frame-mfa">
+                            BankAPIWeb.Endpoint.plug_builder_call/2
+                            
+                            
+                                <span class="app right">bank_api</span>
+                            
+                        </div>
+                    </div>
+
+                    
+
+                    
+                </div>
+                
+                  <div class="frame-info" data-index="2" role="stack-trace-details">
+                    <div class="file">
+                        <a href="">lib/plug/debugger.ex</a>
+                    </div>
+
+                    
+                    <div class="code code-block-empty">No code available.</div>
+                    
+
+                    <div class="meta">
+                        <div class="frame-mfa">
+                            BankAPIWeb.Endpoint.&quot;call (overridable 3)&quot;/2
+                            
+                            
+                                <span class="app right">bank_api</span>
+                            
+                        </div>
+                    </div>
+
+                    
+
+                    
+                </div>
+                
+                  <div class="frame-info" data-index="3" role="stack-trace-details">
+                    <div class="file">
+                        <a href="">lib/bank_api_web/endpoint.ex</a>
+                    </div>
+
+                    
+<pre class="code code-block"><span class="line -highlight"><span class="ln">1</span><span class="code">defmodule BankAPIWeb.Endpoint do</span></span>
+<span class="line "><span class="ln">2</span><span class="code">  use Phoenix.Endpoint, otp_app: :bank_api</span></span>
+<span class="line "><span class="ln">3</span><span class="code"></span></span>
+<span class="line "><span class="ln">4</span><span class="code">  # The session will be stored in the cookie and signed,</span></span>
+<span class="line "><span class="ln">5</span><span class="code">  # this means its contents can be read but not tampered with.</span></span>
+<span class="line "><span class="ln">6</span><span class="code">  # Set :encryption_salt if you would also like to encrypt it.</span></span>
+</pre>
+                    
+
+                    <div class="meta">
+                        <div class="frame-mfa">
+                            BankAPIWeb.Endpoint.call/2
+                            
+                                <a class="docs right" href="https://hexdocs.pm/bank_api/0.1.0/BankAPIWeb.Endpoint.html#call/2">docs</a>
+                            
+                            
+                                <span class="app right">bank_api</span>
+                            
+                        </div>
+                    </div>
+
+                    
+
+                    
+                </div>
+                
+                  <div class="frame-info" data-index="4" role="stack-trace-details">
+                    <div class="file">
+                        <a href="">lib/phoenix/endpoint/cowboy2_handler.ex</a>
+                    </div>
+
+                    
+<pre class="code code-block"><span class="line "><span class="ln">37</span><span class="code">        end</span></span>
+<span class="line "><span class="ln">38</span><span class="code"></span></span>
+<span class="line "><span class="ln">39</span><span class="code">      {:plug, conn, handler, opts} -&gt;</span></span>
+<span class="line "><span class="ln">40</span><span class="code">        %{adapter: {@connection, req}} =</span></span>
+<span class="line "><span class="ln">41</span><span class="code">          conn</span></span>
+<span class="line -highlight"><span class="ln">42</span><span class="code">          |&gt; handler.call(opts)</span></span>
+<span class="line "><span class="ln">43</span><span class="code">          |&gt; maybe_send(handler)</span></span>
+<span class="line "><span class="ln">44</span><span class="code"></span></span>
+<span class="line "><span class="ln">45</span><span class="code">        {:ok, req, {handler, opts}}</span></span>
+<span class="line "><span class="ln">46</span><span class="code">    end</span></span>
+<span class="line "><span class="ln">47</span><span class="code">  catch</span></span>
+</pre>
+                    
+
+                    <div class="meta">
+                        <div class="frame-mfa">
+                            Phoenix.Endpoint.Cowboy2Handler.init/4
+                            
+                            
+                                <span class="app right">phoenix</span>
+                            
+                        </div>
+                    </div>
+
+                    
+
+                    
+                </div>
+                
+                  <div class="frame-info" data-index="5" role="stack-trace-details">
+                    <div class="file">
+                        <a href="">/Users/fionamccawley/projects/bank_api/deps/cowboy/src/cowboy_handler.erl</a>
+                    </div>
+
+                    
+<pre class="code code-block"><span class="line "><span class="ln">36</span><span class="code">-optional_callbacks([terminate/3]).</span></span>
+<span class="line "><span class="ln">37</span><span class="code"></span></span>
+<span class="line "><span class="ln">38</span><span class="code">-spec execute(Req, Env) -&gt; {ok, Req, Env}</span></span>
+<span class="line "><span class="ln">39</span><span class="code">	when Req::cowboy_req:req(), Env::cowboy_middleware:env().</span></span>
+<span class="line "><span class="ln">40</span><span class="code">execute(Req, Env=#{handler := Handler, handler_opts := HandlerOpts}) -&gt;</span></span>
+<span class="line -highlight"><span class="ln">41</span><span class="code">	try Handler:init(Req, HandlerOpts) of</span></span>
+<span class="line "><span class="ln">42</span><span class="code">		{ok, Req2, State} -&gt;</span></span>
+<span class="line "><span class="ln">43</span><span class="code">			Result = terminate(normal, Req2, State, Handler),</span></span>
+<span class="line "><span class="ln">44</span><span class="code">			{ok, Req2, Env#{result =&gt; Result}};</span></span>
+<span class="line "><span class="ln">45</span><span class="code">		{Mod, Req2, State} -&gt;</span></span>
+<span class="line "><span class="ln">46</span><span class="code">			Mod:upgrade(Req2, Env, Handler, State);</span></span>
+</pre>
+                    
+
+                    <div class="meta">
+                        <div class="frame-mfa">
+                            :cowboy_handler.execute/2
+                            
+                            
+                                <span class="app right">cowboy</span>
+                            
+                        </div>
+                    </div>
+
+                    
+
+                    
+                </div>
+                
+                  <div class="frame-info" data-index="6" role="stack-trace-details">
+                    <div class="file">
+                        <a href="">/Users/fionamccawley/projects/bank_api/deps/cowboy/src/cowboy_stream_h.erl</a>
+                    </div>
+
+                    
+<pre class="code code-block"><span class="line "><span class="ln">315</span><span class="code">	end.</span></span>
+<span class="line "><span class="ln">316</span><span class="code"></span></span>
+<span class="line "><span class="ln">317</span><span class="code">execute(_, _, []) -&gt;</span></span>
+<span class="line "><span class="ln">318</span><span class="code">	ok;</span></span>
+<span class="line "><span class="ln">319</span><span class="code">execute(Req, Env, [Middleware|Tail]) -&gt;</span></span>
+<span class="line -highlight"><span class="ln">320</span><span class="code">	case Middleware:execute(Req, Env) of</span></span>
+<span class="line "><span class="ln">321</span><span class="code">		{ok, Req2, Env2} -&gt;</span></span>
+<span class="line "><span class="ln">322</span><span class="code">			execute(Req2, Env2, Tail);</span></span>
+<span class="line "><span class="ln">323</span><span class="code">		{suspend, Module, Function, Args} -&gt;</span></span>
+<span class="line "><span class="ln">324</span><span class="code">			proc_lib:hibernate(?MODULE, resume, [Env, Tail, Module, Function, Args]);</span></span>
+<span class="line "><span class="ln">325</span><span class="code">		{stop, _Req2} -&gt;</span></span>
+</pre>
+                    
+
+                    <div class="meta">
+                        <div class="frame-mfa">
+                            :cowboy_stream_h.execute/3
+                            
+                            
+                                <span class="app right">cowboy</span>
+                            
+                        </div>
+                    </div>
+
+                    
+
+                    
+                </div>
+                
+                  <div class="frame-info" data-index="7" role="stack-trace-details">
+                    <div class="file">
+                        <a href="">/Users/fionamccawley/projects/bank_api/deps/cowboy/src/cowboy_stream_h.erl</a>
+                    </div>
+
+                    
+<pre class="code code-block"><span class="line "><span class="ln">297</span><span class="code">%% @todo Better spec.</span></span>
+<span class="line "><span class="ln">298</span><span class="code">-spec request_process(cowboy_req:req(), cowboy_middleware:env(), [module()]) -&gt; ok.</span></span>
+<span class="line "><span class="ln">299</span><span class="code">request_process(Req, Env, Middlewares) -&gt;</span></span>
+<span class="line "><span class="ln">300</span><span class="code">	OTP = erlang:system_info(otp_release),</span></span>
+<span class="line "><span class="ln">301</span><span class="code">	try</span></span>
+<span class="line -highlight"><span class="ln">302</span><span class="code">		execute(Req, Env, Middlewares)</span></span>
+<span class="line "><span class="ln">303</span><span class="code">	catch</span></span>
+<span class="line "><span class="ln">304</span><span class="code">		exit:Reason -&gt;</span></span>
+<span class="line "><span class="ln">305</span><span class="code">			Stacktrace = erlang:get_stacktrace(),</span></span>
+<span class="line "><span class="ln">306</span><span class="code">			erlang:raise(exit, {Reason, Stacktrace}, Stacktrace);</span></span>
+<span class="line "><span class="ln">307</span><span class="code">		%% OTP 19 does not propagate any exception stacktraces,</span></span>
+</pre>
+                    
+
+                    <div class="meta">
+                        <div class="frame-mfa">
+                            :cowboy_stream_h.request_process/3
+                            
+                            
+                                <span class="app right">cowboy</span>
+                            
+                        </div>
+                    </div>
+
+                    
+
+                    
+                </div>
+                
+                  <div class="frame-info" data-index="8" role="stack-trace-details">
+                    <div class="file">
+                        <a href="">proc_lib.erl</a>
+                    </div>
+
+                    
+                    <div class="code code-block-empty">No code available.</div>
+                    
+
+                    <div class="meta">
+                        <div class="frame-mfa">
+                            :proc_lib.init_p_do_apply/3
+                            
+                            
+                                <span class="app right">stdlib</span>
+                            
+                        </div>
+                    </div>
+
+                    
+
+                    
+                </div>
+                
+            </div>
+
+            <div class="stack-trace">
+                <div class="stack-trace-heading">
+                    <label><input type="checkbox" role="show-all-toggle">Show only app frames</label>
+                </div>
+
+                <ul class="stack-trace-list -show-all" role="stack-trace-list">
+                    
+                    <li>
+                        <button class="stack-trace-item -app" role="stack-trace-item" data-index="0">
+                            <span class="left">
+                                
+                                <span class="app">bank_api</span>
+                                
+
+                                <span class="filename">
+                                    lib/phoenix/router.ex<span class="line">:330</span>
+                                </span>
+                            </span>
+
+                            <span class="info">BankAPIWeb.Router.call/2</span>
+                        </button>
+                    </li>
+                    
+                    <li>
+                        <button class="stack-trace-item -app" role="stack-trace-item" data-index="1">
+                            <span class="left">
+                                
+                                <span class="app">bank_api</span>
+                                
+
+                                <span class="filename">
+                                    lib/bank_api_web/endpoint.ex<span class="line">:1</span>
+                                </span>
+                            </span>
+
+                            <span class="info">BankAPIWeb.Endpoint.plug_builder_call/2</span>
+                        </button>
+                    </li>
+                    
+                    <li>
+                        <button class="stack-trace-item -app" role="stack-trace-item" data-index="2">
+                            <span class="left">
+                                
+                                <span class="app">bank_api</span>
+                                
+
+                                <span class="filename">
+                                    lib/plug/debugger.ex<span class="line">:132</span>
+                                </span>
+                            </span>
+
+                            <span class="info">BankAPIWeb.Endpoint.&quot;call (overridable 3)&quot;/2</span>
+                        </button>
+                    </li>
+                    
+                    <li>
+                        <button class="stack-trace-item -app" role="stack-trace-item" data-index="3">
+                            <span class="left">
+                                
+                                <span class="app">bank_api</span>
+                                
+
+                                <span class="filename">
+                                    lib/bank_api_web/endpoint.ex<span class="line">:1</span>
+                                </span>
+                            </span>
+
+                            <span class="info">BankAPIWeb.Endpoint.call/2</span>
+                        </button>
+                    </li>
+                    
+                    <li>
+                        <button class="stack-trace-item -all" role="stack-trace-item" data-index="4">
+                            <span class="left">
+                                
+                                <span class="app">phoenix</span>
+                                
+
+                                <span class="filename">
+                                    lib/phoenix/endpoint/cowboy2_handler.ex<span class="line">:42</span>
+                                </span>
+                            </span>
+
+                            <span class="info">Phoenix.Endpoint.Cowboy2Handler.init/4</span>
+                        </button>
+                    </li>
+                    
+                    <li>
+                        <button class="stack-trace-item -all" role="stack-trace-item" data-index="5">
+                            <span class="left">
+                                
+                                <span class="app">cowboy</span>
+                                
+
+                                <span class="filename">
+                                    /Users/fionamccawley/projects/bank_api/deps/cowboy/src/cowboy_handler.erl<span class="line">:41</span>
+                                </span>
+                            </span>
+
+                            <span class="info">:cowboy_handler.execute/2</span>
+                        </button>
+                    </li>
+                    
+                    <li>
+                        <button class="stack-trace-item -all" role="stack-trace-item" data-index="6">
+                            <span class="left">
+                                
+                                <span class="app">cowboy</span>
+                                
+
+                                <span class="filename">
+                                    /Users/fionamccawley/projects/bank_api/deps/cowboy/src/cowboy_stream_h.erl<span class="line">:320</span>
+                                </span>
+                            </span>
+
+                            <span class="info">:cowboy_stream_h.execute/3</span>
+                        </button>
+                    </li>
+                    
+                    <li>
+                        <button class="stack-trace-item -all" role="stack-trace-item" data-index="7">
+                            <span class="left">
+                                
+                                <span class="app">cowboy</span>
+                                
+
+                                <span class="filename">
+                                    /Users/fionamccawley/projects/bank_api/deps/cowboy/src/cowboy_stream_h.erl<span class="line">:302</span>
+                                </span>
+                            </span>
+
+                            <span class="info">:cowboy_stream_h.request_process/3</span>
+                        </button>
+                    </li>
+                    
+                    <li>
+                        <button class="stack-trace-item -all" role="stack-trace-item" data-index="8">
+                            <span class="left">
+                                
+                                <span class="app">stdlib</span>
+                                
+
+                                <span class="filename">
+                                    proc_lib.erl<span class="line">:249</span>
+                                </span>
+                            </span>
+
+                            <span class="info">:proc_lib.init_p_do_apply/3</span>
+                        </button>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="conn-info">
+        
+
+        <details class="conn-details">
+            <summary>Request info</summary>
+
+            <dl>
+                <dt>URI:</dt>
+                <dd class="code-quote">http://localhost:4000/api/data/1</dd>
+            </dl>
+
+            <dl>
+                <dt>Query string:</dt>
+                <dd class="code-quote"></dd>
+            </dl>
+        </details>
+
+        <details class="conn-details">
+            <summary>Headers</summary>
+            
+            <dl>
+                <dt>accept</dt>
+                <dd class="code-quote">*/*</dd>
+            </dl>
+            
+            <dl>
+                <dt>content-length</dt>
+                <dd class="code-quote">38</dd>
+            </dl>
+            
+            <dl>
+                <dt>content-type</dt>
+                <dd class="code-quote">application/json</dd>
+            </dl>
+            
+            <dl>
+                <dt>host</dt>
+                <dd class="code-quote">localhost:4000</dd>
+            </dl>
+            
+            <dl>
+                <dt>user-agent</dt>
+                <dd class="code-quote">curl/7.64.1</dd>
+            </dl>
+            
+        </details>
+
+        
+    </div>
+
+    <script>(function () {
+        var $items = document.querySelectorAll('[role~="stack-trace-item"]')
+        var $toggle = document.querySelector('[role~="show-all-toggle"]')
+        var $list = document.querySelector('[role~="stack-trace-list"]')
+
+        each($items, function ($item) {
+            on($item, 'click', itemOnclick)
+        })
+
+        on($toggle, 'click', toggleOnclick)
+
+        function toggleOnclick () {
+            if (this.checked) {
+                var $first = document.querySelector('[role~="stack-trace-item"].-app:first-of-type')
+                if ($first) itemOnclick.call($first)
+                removeClass($list, '-show-all')
+            } else {
+                addClass($list, '-show-all')
+            }
+        }
+
+        function itemOnclick () {
+            var idx = this.getAttribute('data-index')
+
+            var $detail = document.querySelector('[role~="stack-trace-details"].-active')
+            if ($detail) removeClass($detail, '-active')
+
+            $detail = document.querySelector('[role~="stack-trace-details"][data-index="' + idx + '"]')
+            if ($detail) addClass($detail, '-active')
+
+            var $item = document.querySelector('[role~="stack-trace-item"].-active')
+            if ($item) removeClass($item, '-active')
+
+            $item = document.querySelector('[role~="stack-trace-item"][data-index="' + idx + '"]')
+            if ($item) addClass($item, '-active')
+        }
+
+        var $first = document.querySelector('[role~="stack-trace-item"]:first-of-type')
+        if ($first) itemOnclick.call($first)
+
+        /*
+         * Helpers
+         */
+
+        function each (list, fn) {
+            for (var i = 0, len = list.length; i < len; i++) {
+                var item = list[i]
+                fn(item)
+            }
+        }
+
+        function addClass (el, className) {
+            if (el.classList) {
+                el.classList.add(className)
+            } else {
+                el.className += ' ' + className
+            }
+        }
+
+        function removeClass (el, className) {
+            if (el.classList) {
+                el.classList.remove(className)
+            } else {
+                var expr = new RegExp('(^|\\b)' + className.split(' ').join('|') + '(\\b|$)', 'gi')
+                el.className = el.className.replace(expr, ' ')
+            }
+        }
+
+        function on (el, event, handler) {
+            if (el.addEventListener) {
+                el.addEventListener(event, handler)
+            } else {
+                el.attachEvent('on' + event, function () {
+                    handler.call(el)
+                })
+            }
+        }
+    }())</script>
+</body>
+</html>
