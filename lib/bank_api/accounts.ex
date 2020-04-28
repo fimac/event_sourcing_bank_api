@@ -18,11 +18,16 @@ defmodule BankAPI.Accounts do
         initial_balance: initial_balance,
         account_uuid: account_uuid
       }
-      |> Router.dispatch(consistency: :strong)
+      |> Router.dispatch()
 
     case dispatch_result do
       :ok ->
-        {:ok, get_account(account_uuid)}
+        # {:ok, get_account(account_uuid)}
+        {:ok,
+         %Account{
+           current_balance: initial_balance,
+           uuid: account_uuid
+         }}
 
       reply ->
         reply

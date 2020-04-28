@@ -12,7 +12,7 @@ defmodule BankAPI.InMemoryEventStoreCase do
   setup do
     on_exit(fn ->
       :ok = Application.stop(:bank_api)
-      :ok = Applicaiton.stop(:commanded)
+      :ok = Application.stop(:commanded)
 
       {:ok, _apps} = Application.ensure_all_started(:bank_api)
     end)

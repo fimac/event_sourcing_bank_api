@@ -1,6 +1,5 @@
 defmodule BankAPI.ProjectorUtils do
   alias BankAPI.Repo
-
   import Ecto.Query, only: [from: 2]
 
   def truncate_database do
@@ -12,7 +11,7 @@ defmodule BankAPI.ProjectorUtils do
     CASCADE;
     """
 
-    {:ok, _result} = Repo.Query(truncate_readstore_tables_sql)
+    {:ok, _result} = Repo.query(truncate_readstore_tables_sql)
 
     :ok
   end
@@ -20,7 +19,7 @@ defmodule BankAPI.ProjectorUtils do
   def get_last_seen_event_number(name) do
     from(
       p in "projection_versions",
-      where: p.project_name == ^name,
+      where: p.projection_name == ^name,
       select: p.last_seen_event_number
     )
     |> Repo.one() || 0

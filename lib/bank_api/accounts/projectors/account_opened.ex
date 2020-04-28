@@ -1,5 +1,5 @@
 defmodule BankAPI.Accounts.Projectors.AccountOpened do
-  use Commanded.Projections.Ecto, name: "Accounts.Projectors.AccountOpened", consistency: :strong
+  use Commanded.Projections.Ecto, name: "Accounts.Projectors.AccountOpened"
 
   alias BankAPI.Accounts.Events.AccountOpened
   alias BankAPI.Accounts.Projections.Account
