@@ -8,7 +8,11 @@ defmodule BankAPI.Accounts.Projectors.AccountOpened do
     Ecto.Multi.insert(
       multi,
       :account_opened,
-      %Account{uuid: event.account_uuid, current_balance: event.initial_balance}
+      %Account{
+        uuid: event.account_uuid,
+        current_balance: event.initial_balance,
+        status: Account.status().open
+      }
     )
   end)
 end

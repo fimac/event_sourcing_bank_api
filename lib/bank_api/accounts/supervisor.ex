@@ -9,7 +9,8 @@ defmodule BankAPI.Accounts.Supervisor do
 
   def init(_arg) do
     children = [
-      worker(Accounts.Projectors.AccountOpened, [], id: :account_opened)
+      worker(Accounts.Projectors.AccountOpened, [], id: :account_opened),
+      worker(Accounts.Projectors.AccountClosed, [], id: :account_closed)
     ]
 
     Supervisor.init(children, strategy: :one_for_one)
