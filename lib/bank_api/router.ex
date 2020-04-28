@@ -7,12 +7,14 @@ defmodule BankAPI.Router do
     CloseAccount,
     OpenAccount,
     DepositIntoAccount,
-    WithdrawFromAccount
+    WithdrawFromAccount,
+    TransferBetweenAccounts
   }
 
   middleware(BankAPI.Middleware.ValidateCommand)
 
-  dispatch([OpenAccount, CloseAccount, DepositIntoAccount, WithdrawFromAccount],
+  dispatch(
+    [OpenAccount, CloseAccount, DepositIntoAccount, WithdrawFromAccount, TransferBetweenAccounts],
     to: Account,
     identity: :account_uuid
   )
