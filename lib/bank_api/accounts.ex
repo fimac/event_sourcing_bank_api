@@ -79,22 +79,23 @@ defmodule BankAPI.Accounts do
   end
 
   def withdraw(id, amount) do
-  dispatch_result =
-    %WithdrawFromAccount{
-      account_uuid: id,
-      withdraw_amount: amount
-    }
-    |> Router.dispatch(consistency: :strong)
-
-  case dispatch_result do
-    :ok ->
-      {
-        :ok,
-        Repo.get!(Account, id)
+    dispatch_result =
+      %WithdrawFromAccount{
+        account_uuid: id,
+        withdraw_amount: amount
       }
+      |> Router.dispatch(consistency: :strong)
 
-    reply ->
-      reply
+    case dispatch_result do
+      :ok ->
+        {
+          :ok,
+          Repo.get!(Account, id)
+        }
+
+      reply ->
+        reply
+    end
   end
 
   def uuid_regex do
