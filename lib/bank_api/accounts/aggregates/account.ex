@@ -1,4 +1,4 @@
-defmodule BankAPI.Accounts.Aggregates.AccountBlah do
+defmodule BankAPI.Accounts.Aggregates.Account do
   defstruct uuid: nil,
             current_balance: nil,
             closed?: false
@@ -9,14 +9,16 @@ defmodule BankAPI.Accounts.Aggregates.AccountBlah do
     OpenAccount,
     CloseAccount,
     DepositIntoAccount,
-    WithdrawFromAccount
+    WithdrawFromAccount,
+    TransferBetweenAccounts
   }
 
   alias BankAPI.Accounts.Events.{
     AccountOpened,
     AccountClosed,
     DepositedIntoAccount,
-    WithdrawnFromAccount
+    WithdrawnFromAccount,
+    MoneyTransferRequested
   }
 
   def execute(

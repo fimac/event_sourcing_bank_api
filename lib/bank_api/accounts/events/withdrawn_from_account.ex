@@ -3,6 +3,7 @@ defmodule BankAPI.Accounts.Events.WithdrawnFromAccount do
 
   defstruct [
     :account_uuid,
-    :new_current_balance
+    :new_current_balance,
+    :transfer_uuid
   ]
 end

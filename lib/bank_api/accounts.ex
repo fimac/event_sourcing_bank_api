@@ -10,7 +10,8 @@ defmodule BankAPI.Accounts do
     CloseAccount,
     OpenAccount,
     DepositIntoAccount,
-    WithdrawFromAccount
+    WithdrawFromAccount,
+    TransferBetweenAccounts
   }
 
   alias BankAPI.Accounts.Projections.Account

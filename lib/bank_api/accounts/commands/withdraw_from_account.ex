@@ -1,7 +1,7 @@
 defmodule BankAPI.Accounts.Commands.WithdrawFromAccount do
   @enforce_keys [:account_uuid]
 
-  defstruct [:account_uuid, :withdraw_amount]
+  defstruct [:account_uuid, :withdraw_amount, :transfer_uuid]
 
   alias BankAPI.Accounts
   alias BankAPI.Accounts.Commands.Validators
@@ -13,7 +13,8 @@ defmodule BankAPI.Accounts.Commands.WithdrawFromAccount do
   defp schema do
     %{
       account_uuid: [:string, Skooma.Validators.regex(Accounts.uuid_regex())],
-      withdraw_amount: [:int, &Validators.positive_integer(&1, 1)]
+      withdraw_amount: [:int, &Validators.positive_integer(&1, 1)],
+      transfer_uuid: [:string, :not_required, Skooma.Validators.regex(Accounts.uuid_regex())]
     }
   end
 end

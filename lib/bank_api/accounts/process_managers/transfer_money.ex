@@ -12,6 +12,19 @@ defmodule BankAPI.Accounts.ProcessManagers.TransferMoney do
     :status
   ]
 
+  alias __MODULE__
+
+  alias BankAPI.Accounts.Events.{
+    MoneyTransferRequested,
+    WithdrawnFromAccount,
+    DepositedIntoAccount
+  }
+
+  alias BankAPI.Accounts.Commands.{
+    WithdrawFromAccount,
+    DepositIntoAccount
+  }
+
   def interested?(%MoneyTransferRequested{transfer_uuid: transfer_uuid}),
     do: {:start!, transfer_uuid}
 
